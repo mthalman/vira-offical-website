@@ -25,6 +25,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\assets\.gitkeep" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Controllers\" />
   </ItemGroup>
 
