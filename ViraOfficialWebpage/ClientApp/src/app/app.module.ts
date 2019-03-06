@@ -9,9 +9,9 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule, MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatToolbarModule, MatSidenavModule, MatListModule} from '@angular/material';
+import {MatFormFieldModule, MatInputModule, MatButtonModule, MatCheckboxModule, MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatToolbarModule, MatSidenavModule, MatListModule} from '@angular/material';
+
 import { LayoutModule } from '@angular/cdk/layout';
-import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -20,6 +20,8 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     HomeComponent
   ],
   imports: [
+    MatFormFieldModule,
+    MatInputModule, 
     BrowserAnimationsModule,
     MatButtonModule,
     MatCheckboxModule,
@@ -36,8 +38,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     LayoutModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule,
-    FlexLayoutModule
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

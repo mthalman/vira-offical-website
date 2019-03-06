@@ -3,7 +3,11 @@
     <mat-card-title>
       <h1 class="mat-h1">Hello World!</h1>
     </mat-card-title>
-    <div class="parallax"></div>
+  </mat-card>
+</div>
+<div class="parallax"></div>
+<div class="grid-container">
+  <mat-card>
     <mat-card-title>
       <h1 class="mat-h1">
         This is text
@@ -22,31 +26,34 @@
         amet diam magna lorem dolor magna laoreet magna dolor dolor.
         nonummy amet tincidunt euismod aliquam lorem adipiscing sit sit consectetuer.
       </p>
-      <mat-divider></mat-divider>
-      <div class="parallax"></div>
     </mat-card-content>
-    <mat-card-title>
-      <h1 class="mat-h1">You may also know us from the following platforms:</h1>
-    </mat-card-title>
-
-    <div class="container"
-         fxLayout
-         fxLayout.xs="column"
-         fxLayoutAlign="center"
-         fxLayoutGap="10px"
-         fxLayoutGap.xs="0">
-      <div class="item item-1" fxFlex="33%">
-        <a href="https://github.com/vira-software-solutions" target="_blank">
-          <div>
-            <img class="s-media-img md-card-image" src="assets/Octocat.png" />
-          </div>
-          <h1 class="mat-h1">GitHub</h1>
-        </a>
-      </div>
-      <div class="item item-2" fxFlex="33%" fxFlexOrder="3">Item 2</div>
-      <div class="item item-3" fxFlex>Item 3</div>
-    </div>
-
-    
   </mat-card>
 </div>
+
+<div class="parallax"></div>
+
+<div class="grid-container">
+
+  <mat-card>
+
+    <h1 class="mat-h1">You may also know us from the following platforms:</h1>
+
+    <div class="grid-container">
+      <mat-grid-list cols="4" rowHeight="250px">
+        <mat-grid-tile *ngFor="let card of cards | async" colspan="1" rowspan="1">
+          <mat-card class="link-item" (click)="redirect(card.link)">
+            <mat-card-header>
+              <mat-card-title>
+                {{card.title}}
+              </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <img mat-card-lg-image class="img-shadowed" [src]="card.asset" alt="asset" />
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </mat-card>
+</div>
+<div class="parallax"></div>
