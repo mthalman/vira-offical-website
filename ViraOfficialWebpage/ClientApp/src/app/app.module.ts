@@ -12,12 +12,15 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatFormFieldModule, MatInputModule, MatButtonModule, MatCheckboxModule, MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatToolbarModule, MatSidenavModule, MatListModule} from '@angular/material';
 
 import { LayoutModule } from '@angular/cdk/layout';
+import { FooterComponent } from './footer/footer.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavMenuComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     MatFormFieldModule,
@@ -38,7 +41,8 @@ import { LayoutModule } from '@angular/cdk/layout';
     LayoutModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
 .grid-container {
-  margin: 20px;
+  margin: 10px 20px;
 }
 
 mat-card img {
@@ -38,4 +38,28 @@ mat-card img {
 .img-shadowed:hover {
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
+}
+
+.parallax-main {
+  /* The image used */
+  background-image: url("../../assets/Background/Vira.png");
+  height: 100vh;
+  
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+
+.parallax-matrix {
+  /* The image used */
+  background-image: url("../../assets/Background/matrix.jpg");
+  height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

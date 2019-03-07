@@ -12,19 +12,16 @@
   @include angular-material-theme($vira-theme);
 }
 
-.parallax {
-  /* The image used */
-  // TODO: Replace image with vector graphic!!!
-  background-image: url("assets/Vira.png");
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
 
-  height: 200px;
-
-  margin: 10px 2px 10px 2px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: black;
+::-webkit-scrollbar {
+  width: 0px; /* remove scrollbar space */
+  background: transparent; /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
 }
