@@ -1,4 +1,4 @@
-<div class="parallax-main">
+<div class="parallax-main fading-object">
 
 </div><div class="grid-container">
   <mat-card>
@@ -7,7 +7,7 @@
     </mat-card-title>
   </mat-card>
 </div>
-<div class="parallax-matrix"></div>
+<div class="parallax-matrix fading-object"></div>
 <div class="grid-container">
   <mat-card>
     <mat-card-title>
@@ -31,7 +31,7 @@
     </mat-card-content>
   </mat-card>
 </div>
-<div class="parallax-main"></div>
+<div class="parallax-main fading-object"></div>
 <div class="grid-container">
 
   <mat-card>
@@ -41,7 +41,7 @@
     <div class="grid-container">
       <mat-grid-list layout-fill flex
                      [cols]="breakpoint"
-                     rowHeight="250px"
+                     rowHeight="200px"
                      (window:resize)="onResize($event)">
         <mat-grid-tile *ngFor="let card of cards | async" colspan="1" rowspan="1">
           <mat-card class="link-item" (click)="redirect(card.link)">
