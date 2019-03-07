@@ -14,13 +14,15 @@ import {MatFormFieldModule, MatInputModule, MatButtonModule, MatCheckboxModule, 
 import { LayoutModule } from '@angular/cdk/layout';
 import { FooterComponent } from './footer/footer.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { ImprintComponent } from './imprint/imprint.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    ImprintComponent
   ],
   imports: [
     MatFormFieldModule,
@@ -32,7 +34,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' }
+      { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: 'imprint', component: ImprintComponent }
     ]),
     MatGridListModule,
     MatCardModule,
