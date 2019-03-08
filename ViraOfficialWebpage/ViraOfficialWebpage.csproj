@@ -36,9 +36,6 @@
     <None Update="ClientApp\src\assets\Background\matrix.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
-    <None Update="ClientApp\src\assets\Background\Vira.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </None>
     <None Update="ClientApp\src\assets\Octocat.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
