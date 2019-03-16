@@ -34,3 +34,4 @@ export class HomeComponent {
     window.open(link, "_blank");
   }
 }
+

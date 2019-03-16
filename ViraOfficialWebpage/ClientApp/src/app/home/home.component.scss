@@ -40,10 +40,9 @@ mat-card img {
   filter: drop-shadow(5px 5px 5px #222);
 }
 
-.parallax-main {
+.parallax {
   /* The image used */
   background-image: url("../../assets/Background/Vira.svg");
-  height: 100vh;
   
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -53,13 +52,18 @@ mat-card img {
   background-color: black;
 }
 
-.parallax-matrix {
-  /* The image used */
-  background-image: url("../../assets/Background/matrix.jpg");
-  height: 300px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.main {
+  height: 100vh;
+}
+
+.blurred {
+  height: 200px;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.inverted {
+  height: 200px;
+  -webkit-filter: sepia(1);
+  filter: sepia(1);
 }
