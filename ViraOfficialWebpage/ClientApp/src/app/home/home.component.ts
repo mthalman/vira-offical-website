@@ -18,7 +18,7 @@ export class HomeComponent {
     })
   );
 
-  private breakpoint;
+  public breakpoint;
 
   ngOnInit() {
     this.breakpoint = (window.innerWidth <= 500) ? 1 : 3;
